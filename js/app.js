@@ -89,6 +89,10 @@
         menuBurger.classList.toggle("_icon-active");
         if (menuBody) menuBody.classList.toggle("_menu-active");
     }));
+    window.addEventListener("load", windowLoad);
+    function windowLoad() {
+        document.documentElement.classList.add("loaded");
+    }
     window["FLS"] = true;
     isWebp();
 })();
