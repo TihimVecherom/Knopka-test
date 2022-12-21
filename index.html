@@ -1,185 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221220232708">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «KNOPKA WEB»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Вёрстка «KNOPKA WEB»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Телеграм: <a href="tel:+380992511793">+380992511793</a></p>
-		</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__logo">
+						<a class="logo-link" href="#">
+							<img src="img/header/logo.svg" alt="Logo">
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link active-page">Головна</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Проекти</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Послуги</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div data-da=".menu__list, 479.98" class="header__language">
+						<label class="label-language" for="lang-1">
+							<input class="input-language" type="radio" name="language" id="lang-1">
+							<span>EN</span>
+						</label>
+						<label class="label-language" for="lang-2">
+							<input class="input-language" type="radio" name="language" id="lang-2">
+							<span>UA</span>
+						</label>
+						<label class="label-language" for="lang-3">
+							<input class="input-language" type="radio" name="language" id="lang-3">
+							<span>RU</span>
+						</label>
+					</div>
+					<div class="header__buttons">
+						<a class="header__button" href="tel:+380956621623"><span>+380956621623</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="first">
+				<div class="first__container">
+					<div class="first__content">
+						<div class="first__block-text">
+							<div class="first__text-company">
+								<span>KNO.PKA </span><span>design studio</span>
+							</div>
+							<div class="first__title">
+								<span>Розробка сайтів,</span> <span>дизайну та контенту</span>
+							</div>
+							<div class="first__info-text">
+								<span>HTML</span><span>,</span> <span>СSS</span><span>,</span> <span>JS</span>
+							</div>
+							<div class="first__buttons">
+								<a class="first__button button" href="#"><span>Відправити</span></a>
+							</div>
+						</div>
+						<div class="first__block-picture ">
+							<div data-prlx-mouse class="ellips">
+								<div class="ellips__wrapper">
+									<div class="ellips__body">
+										<div class="ellips__main">
+											<div data-prlx-mouse class="ellips__picture">
+												<svg width="155" height="177" viewBox="0 0 155 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M58.5786 9.55615C11.2938 36.8234 3.98926 41.1335 2.07726 42.8933L0 44.8051V88.5V132.195L2.07726 134.131C3.21929 135.196 12.4635 140.853 22.619 146.702C32.7745 152.552 48.7481 161.761 58.117 167.169C67.485 172.576 76.1375 177 77.345 177C78.5517 177 92.2828 169.642 107.858 160.648C152.274 135.002 153.568 134.192 154.282 131.592C155.269 127.994 155.225 47.7075 154.234 45.0924C153.284 42.5838 152.542 42.1241 107.807 16.347C92.2044 7.35616 78.4742 0 77.2943 0C76.1153 0 67.6927 4.2999 58.5786 9.55615ZM110.325 34.2972C125.559 43.0851 138.542 50.6906 139.176 51.1984C140.064 51.9092 140.33 60.5368 140.33 88.6446V125.167L136.904 127.221C135.021 128.351 120.817 136.61 105.342 145.575L77.2056 161.875L63.2991 153.779C55.6502 149.326 41.499 141.119 31.8513 135.541L14.31 125.401V88.513V51.6256L45.6996 33.3631L77.0893 15.0997L79.859 16.7094C81.3823 17.5944 95.0922 25.5084 110.325 34.2972ZM84.7152 59.0772C82.516 61.571 58.1632 110.959 58.1632 112.926C58.1632 113.881 59.0246 115.76 60.077 117.103C62.3251 119.972 67.2856 120.449 69.697 118.028C72.4806 115.234 96.0154 66.8745 96.0154 63.9489C96.0154 62.3976 95.1965 60.3403 94.169 59.3089C91.8489 56.9801 86.677 56.8531 84.7152 59.0772ZM34.7936 71.002C15.608 88.9216 15.608 88.0784 34.7936 105.998C43.1746 113.827 45.6092 114.623 49.4341 110.783C53.3061 106.897 52.4937 104.396 44.7764 96.4353C40.9681 92.508 37.8522 88.9365 37.8522 88.5C37.8522 88.0635 41.0189 84.4401 44.89 80.4479C51.408 73.7237 51.8843 72.9676 51.3498 70.1874C51.0322 68.5361 49.8957 66.4566 48.8257 65.5641C45.2316 62.569 42.8229 63.5022 34.7936 71.002ZM105.408 66.0868C101.544 70.2162 102.587 73.5097 110.272 81.4358L117.142 88.5213L110.272 95.5763C104.411 101.593 103.401 103.1 103.401 105.829C103.401 109.756 106.549 113.058 110.292 113.058C112.378 113.058 114.932 111.057 122.862 103.213C128.336 97.7985 133.292 92.2114 133.875 90.7982C135.424 87.0451 133.755 84.4892 122.542 73.4411C111.921 62.9768 109.352 61.874 105.408 66.0868Z" fill="url(#paint0_linear_16_233)" fill-opacity="0.7" />
+													<defs>
+														<linearGradient id="paint0_linear_16_233" x1="77.5" y1="0" x2="77.5" y2="177" gradientUnits="userSpaceOnUse">
+															<stop stop-color="#6832FF" />
+															<stop offset="1" stop-color="#D359DF" />
+														</linearGradient>
+													</defs>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu menu-footer">
+					<nav class="menu-footer__body">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link"></a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link"></a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link"></a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link"></a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
 	</div>
+	<script src="js/app.min.js?_v=20221220232708"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		text-align: center;
-		color: #ebe691;
-		font-size: 2.5rem;
-		line-height: 120%;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			text-align: center;
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-
-	}
-
-	.rootpage__tnx {
-		text-align: center;
-		background: #c22d63;
-
-		margin: 0 auto;
-		margin-bottom: 1em;
-	}
-</style>
 
 </html>
